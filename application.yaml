@@ -1,0 +1,12 @@
+app:
+  php:
+    version: "8.3"
+  environment_variables:
+    - name: APP_ENV
+      value: "production"
+      scope: RUN
+services:
+  mysql:
+    version: "8.0"
+  opensearch:
+    enabled: false
