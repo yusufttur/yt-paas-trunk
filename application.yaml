@@ -5,6 +5,9 @@ app:
     - name: APP_ENV
       value: "production"
       scope: RUN
+    - name: APP_URL
+      value: "https://yt-paas-trunk-49f2c255-7233-4b04-a799-53831513f64a.production.shopware.shop"
+      scope: RUN
     - name: K8S_CACHE_HOST
       value: "redis"
       scope: RUN
