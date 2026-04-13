@@ -41,46 +41,6 @@
             "config/packages/http_discovery.yaml"
         ]
     },
-    "shopware/administration": {
-        "version": "6.7",
-        "recipe": {
-            "repo": "github.com/shopware/recipes",
-            "branch": "main",
-            "version": "6.7",
-            "ref": "914662662f5398fda649a2da578da202c3b50dac"
-        },
-        "files": [
-            "bin/build-administration.sh",
-            "bin/watch-administration.sh"
-        ]
-    },
-    "shopware/core": {
-        "version": "6.7",
-        "recipe": {
-            "repo": "github.com/shopware/recipes",
-            "branch": "main",
-            "version": "6.7",
-            "ref": "3a9e7f8428dbada09530cb35bf072303e108e597"
-        },
-        "files": [
-            "bin/.htaccess",
-            "bin/build-js.sh",
-            "bin/ci",
-            "bin/console",
-            "bin/functions.sh",
-            "config/jwt/.gitignore",
-            "custom/.htaccess",
-            "custom/apps/.gitignore",
-            "custom/plugins/.gitignore",
-            "custom/static-plugins/.gitignore",
-            "files/.htaccess",
-            "public/.htaccess.dist",
-            "public/index.php",
-            "public/maintenance.html",
-            "var/.htaccess",
-            ".htaccess"
-        ]
-    },
     "shopware/docker": {
         "version": "0.3",
         "recipe": {
@@ -93,16 +53,6 @@
             "docker/Dockerfile",
             "config/packages/prod/monolog.yaml"
         ]
-    },
-    "shopware/elasticsearch": {
-        "version": "6.7",
-        "recipe": {
-            "repo": "github.com/shopware/recipes",
-            "branch": "main",
-            "version": "6.7",
-            "ref": "fe34e39dbf21eec276589a9c8857084ea33918f9"
-        },
-        "files": []
     },
     "shopware/k8s-meta": {
         "version": "2.0",
@@ -128,17 +78,35 @@
             "config/packages/prod/opentelemetry.yaml"
         ]
     },
-    "shopware/storefront": {
+    "shopware/platform": {
         "version": "6.7",
         "recipe": {
             "repo": "github.com/shopware/recipes",
             "branch": "main",
             "version": "6.7",
-            "ref": "512a94282164f74f7548d0915cbcd1cfd365f055"
+            "ref": "da0f88350f1c1564a3ebab36bf1367cfd09b2f72"
         },
         "files": [
+            "bin/.htaccess",
+            "bin/build-administration.sh",
+            "bin/build-js.sh",
             "bin/build-storefront.sh",
-            "bin/watch-storefront.sh"
+            "bin/ci",
+            "bin/console",
+            "bin/functions.sh",
+            "bin/watch-administration.sh",
+            "bin/watch-storefront.sh",
+            "config/jwt/.gitignore",
+            "custom/.htaccess",
+            "custom/apps/.gitignore",
+            "custom/plugins/.gitignore",
+            "custom/static-plugins/.gitignore",
+            "files/.htaccess",
+            "public/.htaccess.dist",
+            "public/index.php",
+            "public/maintenance.html",
+            "var/.htaccess",
+            ".htaccess"
         ]
     },
     "symfony/console": {

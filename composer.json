@@ -3,11 +3,8 @@
   "type": "project",
   "require": {
     "composer-runtime-api": "^2.0",
-    "shopware/administration": "dev-trunk",
-    "shopware/core": "dev-trunk",
-    "shopware/elasticsearch": "dev-trunk",
+    "shopware/platform": "dev-trunk",
     "shopware/k8s-meta": "^2.0",
-    "shopware/storefront": "dev-trunk",
     "symfony/flex": "~2"
   },
   "repositories": [
@@ -51,9 +48,7 @@
     "sort-packages": true
   },
   "scripts": {
-    "auto-scripts": {
-      "assets:install": "symfony-cmd"
-    },
+    "auto-scripts": [],
     "post-install-cmd": [
       "@auto-scripts"
     ],

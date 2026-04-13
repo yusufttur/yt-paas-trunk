@@ -1,6 +1,6 @@
-
 services:
-###> shopware/core ###
+
+###> shopware/platform ###
   database:
     image: mariadb:11.8
     environment:
@@ -30,9 +30,6 @@ services:
       interval: 5s
       timeout: 1s
       retries: 10
-###< shopware/core ###
-
-###> shopware/elasticsearch ###
   opensearch:
     image: opensearchproject/opensearch:2
     volumes:
@@ -41,13 +38,11 @@ services:
       OPENSEARCH_INITIAL_ADMIN_PASSWORD: 'c3o_ZPHo!'
       discovery.type: single-node
       plugins.security.disabled: 'true'
-###< shopware/elasticsearch ###
+###< shopware/platform ###
 
 volumes:
-###> shopware/core ###
-  db-data:
-###< shopware/core ###
 
-###> shopware/elasticsearch ###
+###> shopware/platform ###
+  db-data:
   opensearch-data:
-###< shopware/elasticsearch ###
+###< shopware/platform ###

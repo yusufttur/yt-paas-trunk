@@ -1,10 +1,4 @@
-
 services:
-###> shopware/core ###
-  database:
-    ports:
-      - "3306"
-###< shopware/core ###
 
 ###> symfony/mailer ###
   mailer:
@@ -17,8 +11,11 @@ services:
       MP_SMTP_AUTH_ALLOW_INSECURE: 1
 ###< symfony/mailer ###
 
-###> shopware/elasticsearch ###
+###> shopware/platform ###
+  database:
+    ports:
+      - "3306"
   opensearch:
     ports:
       - "9200"
-###< shopware/elasticsearch ###
+###< shopware/platform ###

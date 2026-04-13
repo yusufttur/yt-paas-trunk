@@ -1,7 +1,6 @@
 /.idea
 /vendor/
-
-###> shopware/core ###
+###> shopware/platform ###
 .env.local
 .env.local.php
 .env.*.local
@@ -16,5 +15,5 @@
 !/var/.htaccess
 /auth.json
 /install.lock
-/public/asset-manifest.json
-###< shopware/core ###
+public/asset-manifest.json
+###< shopware/platform ###
