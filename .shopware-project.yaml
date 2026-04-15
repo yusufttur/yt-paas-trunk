@@ -1,0 +1,4 @@
+build:
+  hooks:
+    pre-assets:
+      - 'SHOPWARE_SKIP_ENTITY_SCHEMA_DUMP=1 bin/build-administration.sh'
