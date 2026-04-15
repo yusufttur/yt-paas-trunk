@@ -8,19 +8,8 @@ app:
     - name: APP_URL
       value: "https://yt-paas-trunk-49f2c255-7233-4b04-a799-53831513f64a.production.shopware.shop"
       scope: RUN
-    - name: K8S_CACHE_HOST
-      value: "redis"
-      scope: RUN
-    - name: PHP_SESSION_SAVE_PATH
-      value: "tcp://redis:6379"
-      scope: RUN
-    - name: MESSENGER_TRANSPORT_DSN
-      value: "redis://redis:6379/messages/symfony/?auto_setup=true&serializer=1&stream_max_entries=0&dbindex=0"
-      scope: RUN
 services:
   mysql:
     version: "8.0"
-  redis:
-    version: "7.0"
   opensearch:
     enabled: false
