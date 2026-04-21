@@ -17,6 +17,5 @@ return [
     Shopware\Administration\Administration::class => ['all' => true],
     Shopware\Elasticsearch\Elasticsearch::class => ['all' => true],
     Shopware\Storefront\Storefront::class => ['all' => true],
-    Symfony\UX\TwigComponent\TwigComponentBundle::class => ['all' => true],
     Shopware\OpenTelemetry\OpenTelemetryShopwareBundle::class => ['all' => true],
 ];
